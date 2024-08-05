@@ -1,0 +1,79 @@
+/* src/ProductDetails.css */
+.product-detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-detail img {
+    max-width: 70%;
+    border-radius: 8px;
+  }
+  
+  .product-info,
+  .address-form-container {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .product-info {
+    text-align: left;
+  }
+  
+  .address-form-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: -16px -4px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .address-form h2,
+  .payment-method h2 {
+    margin-bottom: 15px;
+  }
+  
+  .address-form input,
+  .payment-method input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-color: black;
+  }
+  
+  .payment-method {
+    margin-top: 20px;
+  }
+  
+  .payment-method label {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    /* margin-left:%; */
+  }
+  
+  .payment-method input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .confirm{
+    /* background-color: #007bff; */
+    color: white;
+    padding: 8px 16px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* min-height: 100px; */
+    width: 100%; /* Changed from 100% to auto */
+    font-size: 14px; /* Optional: reduce font size */
+  }
+  
+  .confirm:hover {
+    background-color: #0056b3;
+  }
+  
+  

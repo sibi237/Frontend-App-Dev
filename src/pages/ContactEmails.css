@@ -1,0 +1,99 @@
+/* src/ContactUs.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Contact Us Page Container */
+  .contact-us {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* Header */
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-header h1 {
+    font-size: 3em;
+    color: #3498db;
+    margin: 0;
+  }
+  
+  .contact-header p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  /* Form Section */
+  .contact-form-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    font-size: 1.1em;
+    color: #3498db;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #2980b9;
+  }
+  
+  /* Footer */
+  .contact-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #3498db;
+    color: #fff;
+  }
+  
