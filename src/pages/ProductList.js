@@ -3,22 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './ProductList.css';
 
-const ProductList = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`http://localhost:8080/api/products`);
-        setProducts(response.data);
-        console.log(response)
-      } catch (error) {
-        console.error('Error fetching products', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
+const ProductList = ({products}) => {
 
   return (
     <div className="product-list">
