@@ -1,14 +1,11 @@
 import React from 'react';
-// Importing necessary modules from React Router and Swiper
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-// Importing Swiper modules and styles for various effects
 import { EffectCoverflow, Autoplay, Pagination, Keyboard, Mousewheel } from 'swiper/modules';
 import './App.css';
-// Importing a logo image and custom CSS
 import logo from '../assets/Images/prime1.png';
 
 // Navbar component for site navigation
@@ -39,8 +36,12 @@ export const Navbar = () => {
           </div>
         </li>
         <li className="dropdown">
-          {/* Link to SignIn page */}
-          <a href='/signin'>SignIn</a>
+          {/* Dropdown menu for Sign In options */}
+          <Link to="#" className="dropbtn">Sign In</Link>
+          <div className="dropdown-content">
+            <Link to="/signin">User SignIn</Link>
+            <Link to="./AdminSignIn">Admin SignIn</Link>
+          </div>
         </li>
       </ul>
     </nav>

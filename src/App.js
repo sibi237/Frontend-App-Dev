@@ -11,6 +11,8 @@ import SignUp from './pages/SignUp';
 import ProductDetails from './pages/ProductDetails';
 import ConfirmPurchase from './pages/ConfirmPurchase';
 import ProductSearchPage from './pages/productsearchpage';
+import AdminPage from './Admin/AdminPage';
+import AdminSignIn from "./Admin/AdminSignIn"
 
 
 const App = () => {
@@ -28,6 +30,8 @@ const App = () => {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/confirm" element={<ConfirmPurchase />} />
         <Route path="/search" element={<ProductSearchPage/>}/>
+        <Route path="/AdminPage" element={<AdminPage/>}/>
+        <Route path="/AdminSignin" element={<AdminSignIn/>}/>
       </Routes>
     </Router>
   );
