@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './ProductSearchPage.css';
 import SearchBar from './SearchBar';
-import ProductList from './ProductList';
+import ProductCard from './ProductCard'
 
 const ProductSearchPage = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +14,8 @@ const ProductSearchPage = () => {
     setError('');
 
     try {
-      const response = await axios.get('http://localhost:8080/api/Search/search?name='+encodeURI(query));
+      const response = await axios.get(`http://localhost:8080/api/Search/search?name=${encodeURIComponent(query)}`);
+      console.log(response.data);
       setProducts(response.data);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -24,26 +25,12 @@ const ProductSearchPage = () => {
     }
   };
 
-  useEffect(() => { 
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`http://localhost:8080/api/products`);
-        setProducts(response.data);
-        console.log(response)
-      } catch (error) {
-        console.error('Error fetching products', error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
   return (
     <div className="product-search-page">
       <SearchBar onSearch={handleSearch} />
       {loading && <div className="loading">Loading...</div>}
       {error && <div className="error">{error}</div>}
-      <ProductList products={products} />
+      <ProductCard products={products} />
     </div>
   );
 };

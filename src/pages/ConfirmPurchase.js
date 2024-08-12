@@ -45,7 +45,7 @@ const ConfirmPurchase = () => {
       </div>
       {/* Button to complete the purchase */}
       <button className="complete-purchase" onClick={handleCompletePurchase}>
-        Complete Purchase
+        Confirm order
       </button>
 
       {/* Sidebar for post-purchase message */}

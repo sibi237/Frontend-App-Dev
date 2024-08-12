@@ -14,6 +14,7 @@ const AdminSignIn = () => {
     password: '',
     general: '',
   });
+
   const handleLoginChange = (e) => {
     const { name, value } = e.target;
     setLoginData((prevState) => ({
@@ -33,9 +34,8 @@ const AdminSignIn = () => {
         const userExist = response.data.some(
           (data) => data.email === email && data.password === password
         );
-        // console.log("Success");
         if (userExist) {
-          navigate("/AdminPage"); // Redirect to the admin dashboard
+          navigate('/AdminPage'); // Redirect to the admin dashboard
         } else {
           setError((prevState) => ({
             ...prevState,
@@ -84,7 +84,7 @@ const AdminSignIn = () => {
         </div>
         {error.general && <div className="general-error">{error.general}</div>}
         <button type="submit" className="admin-signin-button">Sign In</button>
-        <p>Forgot Password? </p>
+        <p>Forgot Password? <a href="#">Reset here</a></p>
       </form>
     </div>
   );

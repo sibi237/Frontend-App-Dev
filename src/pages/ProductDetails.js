@@ -100,7 +100,7 @@ const ProductDetails = () => {
               onChange={handleQuantityChange}
             />
           </label>
-          <button onClick={handleAddToCart}>Add to Cart</button>
+          
         </div>
       </div>
       <div className="address-form-container">

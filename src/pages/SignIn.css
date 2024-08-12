@@ -1,3 +1,4 @@
+/* Updated SignIn CSS */
 
 .signin-container {
   background-image: url('C:\Users\prave\OneDrive\Desktop\Clone\app\src\assets\Images\telephone.jpg'); /* Path to your background image */
@@ -8,73 +9,79 @@
   display: flex; /* Centers the form */
   justify-content: center; /* Centers the form horizontally */
   align-items: center; /* Centers the form vertically */
+}
+
+.signin-form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);/* Adjust the opacity as needed (0 is fully transparent, 1 is fully opaque) */
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the form */
+  margin-left: 75%;
   
 }
-  
-  .signin-form {
-    
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-left: 950px;
-    background: rgba(255, 255, 255, 0.1);
-    width: 300px;
-  }
-  
-  .signin-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
-  .signin-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0b0f14;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .signin-button:hover {
-    background-color: #ac3141;
-  }
 
-  .error-message {
-    color: red;
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
-  }
-  
-  .general-error {
-    color: red;
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
-  }
-  
-  
+.signin-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color:#0b0f14;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.general-error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0b0f14;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-button:hover {
+  background-color: #ac3141;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}

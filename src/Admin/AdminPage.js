@@ -80,7 +80,10 @@ const AdminPage = () => {
                         required
                     />
                 </div>
-                <button type="submit">Upload Case</button>
+                
+                <button type="submit" className="btn-upload">Upload Case</button>
+
+                
             </form>
         </div>
     );

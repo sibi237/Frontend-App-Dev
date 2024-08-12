@@ -60,7 +60,7 @@ const SignIn = () => {
 
   return (
     <div className="signin-container">
-      <form className="signin-form" onSubmit={handleLoginSubmit}>
+      <form className="signin-form-container" onSubmit={handleLoginSubmit}>
         <h2>Sign In</h2>
         <div className="form-group">
           <label>Email:</label>
@@ -84,7 +84,7 @@ const SignIn = () => {
         </div>
         {error.general && <div className="general-error">{error.general}</div>}
         <button type="submit" className="signin-button">Sign In</button>
-        <p>Don't have an account? <a href="/signup">Create One</a></p>
+        <p className="footer-text">Don't have an account? <a href="/signup">Create One</a></p>
       </form>
     </div>
   );
