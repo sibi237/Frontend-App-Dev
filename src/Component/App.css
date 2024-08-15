@@ -261,3 +261,10 @@
     font-size: 14px;
   }
 }
+.navbar-links .dropdown .dropbtn::before {
+  content: '\f2f6'; /* Font Awesome icon code for user */
+  font-family: 'Font Awesome 5 Free'; /* Font Awesome font */
+  font-weight: 900; /* Font Awesome weight for solid icons */
+  margin-right: 8px; /* Space between icon and text */
+  display: inline-block;
+}

@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Autoplay, Pagination, Keyboard, Mousewheel } from 'swiper/modules';
 import './App.css';
 import logo from '../assets/Images/prime1.png';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Navbar component for site navigation
 export const Navbar = () => {

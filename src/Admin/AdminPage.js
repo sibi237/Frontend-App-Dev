@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import "./AdminPage.css"
- // Ensure this file contains the CSS styles
+import "./AdminPage.css";
 
 const AdminPage = () => {
     const [file, setFile] = useState(null);
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
+    const [previewUrl, setPreviewUrl] = useState('');
 
     const handleFileChange = (e) => {
         const file = e.target.files[0];
@@ -15,8 +15,9 @@ const AdminPage = () => {
             return;
         }
         setFile(file);
+        setPreviewUrl(URL.createObjectURL(file)); // Create a preview URL
     };
-    
+
     const handleNameChange = (e) => {
         setName(e.target.value);
     };
@@ -24,14 +25,14 @@ const AdminPage = () => {
     const handlePriceChange = (e) => {
         setPrice(e.target.value);
     };
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData();
         formData.append('file', file);
         formData.append('name', name);
         formData.append('price', price);
-    
+
         try {
             await axios.post('http://localhost:8080/api/products/addcase', formData, {
                 headers: {
@@ -43,13 +44,13 @@ const AdminPage = () => {
             setFile(null);
             setName('');
             setPrice('');
+            setPreviewUrl('');
         } catch (error) {
             console.error('Error uploading case:', error);
             alert('Failed to upload');
         }
     };
-    
-    
+
     return (
         <div className="admin-page">
             <h1>Admin Page</h1>
@@ -79,11 +80,13 @@ const AdminPage = () => {
                         onChange={handleFileChange}
                         required
                     />
+                    {previewUrl && (
+                        <div className="image-preview">
+                            <img src={previewUrl} alt="Image preview" />
+                        </div>
+                    )}
                 </div>
-                
                 <button type="submit" className="btn-upload">Upload Case</button>
-
-                
             </form>
         </div>
     );

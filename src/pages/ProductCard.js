@@ -20,7 +20,7 @@ const ProductCard = ({products}) => {
           </div>
         ))
       ) : (
-        <p>No products available.</p>
+        <p>Search for products.</p>
       )}
     </div>
   );

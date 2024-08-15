@@ -82,4 +82,9 @@ General Styling
     background-color: #f8d7da;
     color: #721c24;
   }
-  
+  .image-preview img {
+    max-width: 50%;
+    max-height: 100vh;
+    display: block;
+    margin-top: 10px;
+}

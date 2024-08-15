@@ -1,7 +1,7 @@
 /* Updated SignIn CSS */
 
 .signin-container {
-  background-image: url('C:\Users\prave\OneDrive\Desktop\Clone\app\src\assets\Images\telephone.jpg'); /* Path to your background image */
+  background-image: url('C:\Users\prave\OneDrive\Desktop\Clone\app\public\pexels-jessbaileydesign-788946.jpg'); /* Path to your background image */
   background-size: cover; /* Makes sure the image covers the whole container */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -16,9 +16,9 @@
   padding: 20px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);/* Adjust the opacity as needed (0 is fully transparent, 1 is fully opaque) */
-  width: 300px;
+  width: 350px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the form */
-  margin-left: 75%;
+  /* margin-left: 55%; */
   
 }
 

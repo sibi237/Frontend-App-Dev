@@ -1,52 +1,53 @@
-/* OfferPage.css */
 .offer-page {
-    padding: 20px;
-    /* background-color: #555; */
-  }
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  .offer-cards, .payment-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px,1fr));
-    gap: 10px;
-    /* background-color: #555; */
-  }
-  
-  .offer-card, .payment-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-    width: 40%;
-  }
-  
-  .offer-card img, .payment-card img {
-    width: 60%;
-    height: 20vh;
-  }
-  
-  .offer-card:hover, .payment-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .offer-card h2, .payment-card h2 {
-    margin: 10px;
-    font-size: 1.2em;
-  }
-  
-  .offer-card p, .payment-card p {
-    margin: 10px;
-    color: #555;
-  }
-  
-  .discount {
-    background: #f00;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin: 10px;
-    display: inline-block;
-  }
+  padding: 20px;
+  /* background-color: #555; */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.offer-cards, .payment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust minmax for card width */
+  gap: 0; /* Remove gap between cards */
+  /* background-color: #555; */
+}
+
+.offer-card, .payment-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 0; /* Ensure no margin around cards */
+  padding: 10px; /* Add padding inside cards for better content spacing */
+}
+
+.offer-card img, .payment-card img {
+  width: 10%; /* Ensure image fits container */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+.offer-card:hover, .payment-card:hover {
+  transform: scale(1.05);
+}
+
+.offer-card h2, .payment-card h2 {
+  margin: 10px 0;
+  font-size: 1em; /* Adjust font size if needed */
+}
+
+.offer-card p, .payment-card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.discount {
+  background: #f00;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  display: inline-block;
+}
